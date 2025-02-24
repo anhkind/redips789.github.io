@@ -89,8 +89,10 @@ Spring provides you with a web-aware implementation of the ApplicationContext in
 - `XmlWebApplicationContext`
 - `AnnotationConfigWebApplicationContext`
 
+```java
 ApplicationContext context = new FileSystemXmlApplicationContext("c:/knight.xml"); ApplicationContext context = new ClassPathXmlApplicationContext("knight.xml");
 ApplicationContext context = new AnnotationConfigApplicationContext( com.springinaction.knights.config.KnightConfig.class);
+```
 
 ## Can you describe the lifecycle of a Spring Bean in an ApplicationContext?
 
