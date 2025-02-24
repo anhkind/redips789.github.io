@@ -60,6 +60,7 @@ A Java (Java 8 and later) interface is a reference that can contain the followin
 - Private methods
 - Static methods (static methods with implementation)
 - Nested types (such nested type can be an enumeration).
+
 Advantages of an interface:
 - Allows for decoupling of a contract and its implementation(s).
 - Allows for modularization of Java programs.
