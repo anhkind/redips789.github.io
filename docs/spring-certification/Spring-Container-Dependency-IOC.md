@@ -135,7 +135,7 @@ public class JUnit5SpringTest {
 
 `SpringJUnitConfig` combines these 2 annotations:
 `@ExtendWith(SpringExtension.class)` from JUnit 5 to run the test with the
-SpringExtension Class and `@ContextConfiguration from Spring Testing to load the Spring context.
+SpringExtension Class and `@ContextConfiguration` from Spring Testing to load the Spring context.
 
 ### Web Application Context
 **JUnit 4**
