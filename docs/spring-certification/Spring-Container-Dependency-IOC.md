@@ -353,9 +353,12 @@ public void setMovieCatalogs(Map<String, MovieCatalog> movieCatalogs) {
 
 - Alternatively, you may express the non-required nature of a particular dependency through Java 8’s java.util.Optional
 - Constructor, method and parameter can have any access modifier visibility
-  Note! As of Spring Framework 4.3, an @Autowired annotation on such a constructor is no longer necessary if the target bean only defines one constructor to begin with. However, if several constructors are available, at least one must be annotated to teach the container which one to use.
 
+Note! As of Spring Framework 4.3, an @Autowired annotation on such a constructor is no longer necessary if the target bean only defines one constructor to begin with. However, if several constructors are available, at least one must be annotated to teach the container which one to use.
+
+```
 @Autowired(required = Declares whether the annotated dependency is required)
+```
 
 ## How does the @Qualifier annotation complement the use of @Autowired?
 
