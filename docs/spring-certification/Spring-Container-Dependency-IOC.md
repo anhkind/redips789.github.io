@@ -310,17 +310,20 @@ The following are the types of dependency injections that could be injected into
 - Constructor-based dependency injection
 - Setter-based dependency injection
 - Field-based dependency injection
-  Advantages of the constructor injection pattern:
-- It is more suitable for mandatory dependencies, and it makes a strong dependency contract - It provides a more compact code structure than others
+
+Advantages of the constructor injection pattern:
+- It is more suitable for mandatory dependencies, and it makes a strong dependency contract
+- It provides a more compact code structure than others
 - It supports testing by using the dependencies passed as constructor arguments to the dependent class
-- It favours the use of immutable objects, and does not break the information hiding principle Disadvantages of constructor injection pattern:
+- It favours the use of immutable objects, and does not break the information hiding principle
+
+Disadvantages of constructor injection pattern:
 - It may cause circular dependency. (Circular dependency means that the dependent and the dependency class are also dependents on each other, for example, class A depends on Class B and Class B depends on Class A). Spring IoC container detects this circular reference at runtime, and throws a `BeanCurrentlyInCreationException`.
   Object has a public setter methods that takes dependent classes as method arguments to inject dependencies. For setter-based dependency injection, the constructor of the dependent class is not required.
   
 Advantages of setter injection:
 - It is more readable than the constructor injection
 - It solves the circular dependency problem in the application
-
 - It allows costly resources or services to be created as late as possible, and only when required
 - It does not require the constructor to be changed, but dependencies are passed through public properties that are exposed
 
@@ -329,6 +332,7 @@ Disadvantage of the setter injection:
 - A setter-based dependency injection does not provide a code structure as compact as the constructor injection
 
 What is the behaviour of the annotation `@Autowired`?
+
 Autowiring is a mechanism which enables more or less automatic dependency resolution primarily based on types. The basic procedure of dependency injection with the @Autowired is:
 - The Spring container examines the type of the field or parameter that is to be dependency injected.
 - The Spring container searches the application context for a bean which type matches the type of the field or parameter.
