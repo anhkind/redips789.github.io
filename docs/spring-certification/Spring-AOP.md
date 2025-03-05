@@ -13,7 +13,7 @@ title: Spring AOP
   * [Join Point](#join-point)
   * [Advice](#advice)
   * [Aspect](#aspect)
-  * [Weawing](#weawing)
+  * [Weaving](#weaving)
 * [How does Spring solve (implement) a cross cutting concern?](#how-does-spring-solve-implement-a-cross-cutting-concern)
 * [Which are the limitations of the two proxy-types?](#which-are-the-limitations-of-the-two-proxy-types)
 * [How many advice types does Spring support? Can you name each one?](#how-many-advice-types-does-spring-support-can-you-name-each-one)
