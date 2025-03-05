@@ -72,7 +72,7 @@ Action taken by an aspect at a particular join point. Types:
 ### Aspect
 An aspect is the merger of advice and point-cuts. Taken together, advice and point-cuts define everything there is to know about an aspect – what it does and where and when it does it.
 
-### Weawing
+### Weaving
 Weaving is the process of applying aspects to a target object to create a new proxied object. The aspects are woven into the target object at the specified join points. The weaving can take place at several points in the target object’s lifetime:
 - Compile time
 - Class load time
