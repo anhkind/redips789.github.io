@@ -113,23 +113,8 @@ been verified to match
 `UserDetails` is not used for security purposes, it is just a "user info" bean. Spring Security uses `Authentication` instances. So `Authentication` instance will usually have only the information needed to let users log in (usernames, credentials and roles, basically). `UserDetails` is more generic, and **can include anything related to user management** (such as contact information, account information, photographs, whatever).
 Typically, you will have an **Authentication instance backed by a UserDetails instance.**
 
-? matches a single character.  
-\* matches zero or more characters, excluding /.  
-** matches zero or more directories in a patch.  
-
-The pattern "/events/**" matches "/events", "/events/",  
-"/events/1", and "/events/1/form?test=1"; it does not  
-match "/events123".  
-The pattern "/events*" matches "/events", and "/events123";
-it does not match "/events/" or "/events/1".  
-The pattern "/events*/**", "/events123/456", and "/events/1/form?test=1".
-
-There are two wildcards that can be used in URL patterns: -*
-Matches any path on the level at which the wildcard occur. Example: /services/* matches /services/users and /services/orders but not /services/orders/123/items.
-- **
-  Matches any path on the level at the wildcard occurs and all levels below. If only /** or ** then will match any request. Example: /services/** matches /services, /services/, / services/users and /services/orders and also /services/orders/123/items etc.
-
 ## What does the ** pattern in an antMatcher or mvcMatcher do?
+
 
 ? matches a single character.  
 \* matches zero or more characters, excluding /.  
@@ -142,10 +127,9 @@ The pattern "/events*" matches "/events", and "/events123";
 it does not match "/events/" or "/events/1".  
 The pattern "/events*/**", "/events123/456", and "/events/1/form?test=1".
 
-There are two wildcards that can be used in URL patterns: -*
-Matches any path on the level at which the wildcard occur. Example: /services/* matches /services/users and /services/orders but not /services/orders/123/items.
-- **
-  Matches any path on the level at the wildcard occurs and all levels below. If only /** or ** then will match any request. Example: /services/** matches /services, /services/, / services/users and /services/orders and also /services/orders/123/items etc.
+There are two wildcards that can be used in URL patterns:
+  - `*` matches any path on the level at which the wildcard occur. Example: /services/* matches /services/users and /services/orders but not /services/orders/123/items.
+  - `**` matches any path on the level at the wildcard occurs and all levels below. If only /** or ** then will match any request. Example: /services/** matches /services, /services/, / services/users and /services/orders and also /services/orders/123/items etc.
 
 ## Why is the usage of mvcMatcher recommended over antMatcher?
 
