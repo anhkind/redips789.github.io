@@ -166,13 +166,12 @@ Yes, transaction management is a cross-cutting concern.
 AOP proxies use two infrastructure beans for this:
 
 1. `TransactionInterceptor`
-
 2. An implementation of `PlatformTransactionManager` interface. E.g.,
-  1. `DataSourceTransactionManager`
-  2. `HibernateTransactionManager`
-  3. `JpaTransactionManager`
-  4. `JtaTransactionManager`
-  5. `WebLogicJtaTransactionManager`
+   1. `DataSourceTransactionManager`
+   2. `HibernateTransactionManager`
+   3. `JpaTransactionManager`
+   4. `JtaTransactionManager`
+   5. `WebLogicJtaTransactionManager`
 
 **Under the hood**:
 
