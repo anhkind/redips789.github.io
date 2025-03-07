@@ -23,6 +23,7 @@ title: Spring Security
 
 ## What are authentication and authorization? Which must come first?
 
+### Authentication
 The short explanation of authentication is that it is the process of verifying that, for instance, a user of a computer system is who he/she claims to be. In Spring Security, the authentication process consists of the following steps quoted from the Spring Security reference:
 - The username and password are obtained and combined into an instance of `UsernamePasswordAuthenticationToken` (an instance of the Authentication interface).
 - The token is passed to an instance of `AuthenticationManager` for validation.
