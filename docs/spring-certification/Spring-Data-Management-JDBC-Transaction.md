@@ -50,7 +50,7 @@ Obtaining a DataSource in a Spring application depends on whether the applicatio
 - `DriverManagerDataSource`: It always creates a new connection for every connection request
 - `SimpleDriverDataSource`: It is similar to the DriverManagerDataSource except that it works with the JDBC driver directly
 - `SingleConnectionDataSource`:  It returns the same connection for every connection request, but it is not a pooled data source
-- `EmbeddedDatabaseBuilder`: Very useful in development/test databases.** Used to create an embedded database using Java Config like in the following example 
+- `EmbeddedDatabaseBuilder`: Very useful in development/test databases. **Used to create an embedded database using Java Config like in the following example** 
 
 ```java
 return new EmbeddedDatabaseBuilder()
