@@ -183,7 +183,7 @@ When an exception is thrown from within the body of the transactional method, Sp
 
 Two ways of implementing it:
 
-1. Declarative, use `@transaction`
+1. Declarative, use `@Transactional`
 2. Programmatic
   - Use `TransactionTemplate`
   - Use `PlatformTransactionManager`
@@ -194,7 +194,7 @@ Declarative transaction management is **non-invasive**.
 
 1. **Configure transaction management support**
   - Marked a Spring Configuration class using the `@Configuration`
-  - Using Java Configuration, define a `PlatformTransactionManager` bean using `@bean`
+  - Using Java Configuration, define a `PlatformTransactionManager` bean using `@Bean`
   - Enable transaction management by annotate the config file with `@EnableTransactionManagement`
 
     ```java
